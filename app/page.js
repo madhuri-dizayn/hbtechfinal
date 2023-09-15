@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className={styles.main}>
       <Slide1 />
-      {/* <Slide2 /> */}
+      <Slide2 />
       <Slide3 />
       <Slide4 />
       <Slide5 />
