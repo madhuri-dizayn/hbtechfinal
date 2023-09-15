@@ -1,0 +1,169 @@
+@import "../../styles/style.scss";
+.Slide5 {
+  display: flex;
+
+  width: 100vw;
+  height: fit-content;
+  justify-content: space-between;
+  text-align: left;
+  // justify-content: left;
+  padding-left: 5.5%;
+  padding-top: 265px;
+  padding-right: 9.7vw;
+
+  .Section {
+    .heading {
+      padding-left: 35px;
+      .para1 {
+        @include text_body_b2;
+        color: $gray-100;
+      }
+      .para2 {
+        @include text_heading_h3;
+        color: $gray-300;
+        max-width: 595px;
+      }
+    }
+    .cardContainer {
+      width: 550px;
+      padding-top: 40px;
+      .card {
+        cursor: pointer;
+        display: flex;
+        align-items: flex-start;
+        gap: 21px;
+        padding: 50px 30px 15px;
+        margin-bottom: 40px;
+        &.active {
+          margin-bottom: 0px;
+          border-radius: 16px;
+          // opacity: 0.5;
+          transition: all 0.3s ease-out;
+          background: linear-gradient(
+            217deg,
+            rgba(239, 251, 255, 0) 21.49%,
+            #d0e0e5 101.57%
+          );
+          padding: 50px 30px 15px;
+        }
+        .icon {
+          flex: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 5px;
+          width: 56px;
+          height: 56px;
+          background: linear-gradient(
+            180deg,
+            rgba(100, 159, 239, 0.2) 0%,
+            rgba(52, 177, 217, 0.2) 100%
+          );
+        }
+        .details {
+          flex: 1 1 0%;
+          .cardHeader {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 12px;
+            .title {
+              @include text_body_b1;
+              color: $gray-300;
+            }
+          }
+          .description {
+            @include text_body_b2;
+            color: $gray-100;
+          }
+        }
+      }
+    }
+
+    .Section1 {
+      margin-top: 93px;
+      display: flex;
+      width: 37vw;
+      min-width: 543px;
+      transition: all 0.9s ease-out;
+      background: linear-gradient(
+        217deg,
+        rgba(239, 251, 255, 0) 21.49%,
+        #d0e0e5 101.57%
+      );
+      justify-content: space-between;
+
+      .iconImage {
+        display: flex;
+        gap: 32px;
+        // background: linear-gradient(
+        //   217deg,
+        //   rgba(239, 251, 255, 0) 21.49%,
+        //   #d0e0e5 101.57%
+
+        .web {
+          color: #212529;
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 32px; /* 160% */
+        }
+        .subtitle {
+          @include text_body_b2;
+          width: 373px;
+          display: flex;
+          gap: 12px;
+          // &:hover {
+          //   border-radius: 16px;
+
+          //   background: linear-gradient(
+          //     217deg,
+          //     rgba(239, 251, 255, 0) 21.49%,
+          //     #d0e0e5 101.57%
+          //   );
+          // }
+        }
+      }
+    }
+  }
+  .rightSection {
+    width: 33vw;
+    // min-width: 487px;
+    padding-top: 130px;
+    .boxImage {
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .Slide5tablet {
+    display: none;
+  }
+}
+
+@media (max-width: 1002px) {
+  .Slide5 {
+    .Section {
+      display: none;
+    }
+    .rightSection {
+      display: none;
+    }
+
+    .Slide5tablet {
+      display: flex;
+      flex-direction: column;
+
+      .image {
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import "../../styles/style.scss";
+
+.CategoriesSection {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 7.7vw;
+  padding-right: 7.7vw;
+  padding-top: 80px;
+  .btn {
+    cursor: pointer;
+    color: black;
+    border: none;
+    width: 151px;
+    height: 44px;
+    border-radius: 52;
+    // padding: 10px 10px;
+    background-color: transparent;
+    &:hover {
+      background: linear-gradient(92deg, #3b97ec 0.67%, #7815f6 112.55%);
+      color: white;
+    }
+  }
+  .box {
+    background: linear-gradient(92deg, #3b97ec 0.67%, #7815f6 112.55%);
+    color: white;
+    border-radius: 52;
+  }
+}
+
+@media (max-width: 900px) {
+  .section1 {
+    overflow-x: scroll;
+
+    .CategoriesSection {
+      display: flex;
+
+      width: 1216px;
+      align-items: center;
+      padding-left: 40px;
+      padding-top: 40px;
+      overflow: auto;
+
+      .btn {
+        cursor: pointer;
+        color: black;
+        border: none;
+        width: 151px;
+        height: 44px;
+        padding: 10px 10px;
+        background-color: transparent;
+        &:hover {
+          background: linear-gradient(92deg, #3b97ec 0.67%, #7815f6 112.55%);
+          color: white;
+          border-radius: 52;
+        }
+      }
+    }
+  }
+}

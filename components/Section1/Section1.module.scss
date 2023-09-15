@@ -1,0 +1,16 @@
+@import "../../styles/style.scss";
+
+.Section1 {
+  display: flex;
+  width: 100vw;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  .sectionHeading {
+    @include text_heading_h1;
+    max-width: 891px;
+
+    height: 94px;
+  }
+}

@@ -1,0 +1,404 @@
+@import "../../styles/style.scss";
+.Slide6 {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 271px;
+
+  .heading {
+    color: #18181b;
+    gap: 10px;
+    display: flex;
+    text-align: center;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px; /* 133.333% */
+    .heading2 {
+      background: linear-gradient(269deg, #6341f3 2.16%, #3d92ec 36.35%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: Inter;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 48px;
+    }
+  }
+}
+.cardContainer {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 132px;
+  align-items: stretch;
+  padding-left: 5.5vw;
+  padding-right: 5.5vw;
+  // max-width: 1360px;
+  margin: auto;
+  .card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12%;
+
+    .details {
+      width: 45%;
+      .title {
+        @include text_heading_h3;
+        color: $gray-200;
+        padding-bottom: 16px;
+      }
+      .subtitle {
+        @include text_body_b2;
+        color: $gray-100;
+        padding-bottom: 32px;
+      }
+      .button {
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 7px 24px;
+        @include text_body_b2;
+        color: $blue-100;
+        .btnIcon {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+    .image {
+      width: 40%;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+}
+.sectionBox {
+  display: flex;
+
+  width: 100vw;
+  padding-left: 5.5vw;
+  padding-right: 5.5vw;
+  justify-content: space-between;
+
+  .leftSection {
+    padding-top: 94px;
+
+    text-align: left;
+    width: 37vw;
+    height: fit-content;
+
+    justify-content: space-between;
+    .heading1 {
+      color: #18181b;
+      margin-bottom: 16px;
+      font-family: Clash Display;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 44px; /* 137.5% */
+    }
+    .info {
+      margin-bottom: 39px;
+      color: #767d90;
+      width: 37vw;
+      max-width: 533px;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px; /* 187.5% */
+    }
+    .section {
+      width: 14vw;
+      min-width: 203px;
+      display: flex;
+      gap: 8px;
+      // justify-content: space-between;
+
+      .view {
+        color: #3874f4;
+
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; /* 187.5% */
+      }
+    }
+  }
+  .rightSection {
+    padding-top: 24px;
+  }
+}
+.slide2btn {
+  margin-top: 127px;
+  margin-bottom: 88px;
+  .btn {
+    cursor: pointer;
+    width: 110px;
+    margin: auto;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    background: var(--blue-100, #3874f4);
+  }
+}
+
+@media (max-width: 768px) {
+  .Slide6 {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 271px;
+
+    .heading {
+      color: #18181b;
+      gap: 10px;
+      display: flex;
+      text-align: center;
+      font-family: Inter;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 48px; /* 133.333% */
+      .heading2 {
+        background: linear-gradient(269deg, #6341f3 2.16%, #3d92ec 36.35%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Inter;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 48px;
+      }
+    }
+  }
+  .cardContainer {
+    padding-top: 87px;
+    gap: 82px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
+    max-width: 502px;
+    margin: auto;
+    .card {
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      align-items: center;
+      gap: 44px;
+
+      .details {
+        width: 100%;
+
+        .button {
+          border-radius: 5.091px;
+          background: #e3f0f5;
+        }
+      }
+      .image {
+        width: 100%;
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .sectionBox {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: left;
+    width: 100vw;
+    // padding-left: 148px;
+    // padding-right: 118px;
+    justify-content: space-between;
+
+    .leftSection {
+      padding-top: 44px;
+      text-align: left;
+      width: 37vw;
+      height: fit-content;
+
+      justify-content: space-between;
+      .heading1 {
+        color: #18181b;
+        margin-bottom: 16px;
+        font-family: Clash Display;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 44px; /* 137.5% */
+      }
+      .info {
+        margin-bottom: 20px;
+        color: #767d90;
+        width: 37vw;
+        max-width: 533px;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; /* 187.5% */
+      }
+      .section {
+        width: 14vw;
+        min-width: 203px;
+        display: flex;
+        gap: 8px;
+        // justify-content: space-between;
+
+        .view {
+          color: #3874f4;
+
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 30px; /* 187.5% */
+        }
+      }
+    }
+    .rightSection {
+      padding-top: 24px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .Slide6 {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 271px;
+
+    .heading {
+      color: #18181b;
+      gap: 10px;
+      display: flex;
+      text-align: center;
+      font-family: Inter;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 48px; /* 133.333% */
+      .heading2 {
+        background: linear-gradient(269deg, #6341f3 2.16%, #3d92ec 36.35%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Inter;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 48px;
+      }
+    }
+  }
+  .cardContainer {
+    padding-top: 64px;
+    gap: 64px;
+    .card {
+      gap: 16px;
+
+      .details {
+        .title {
+          /* Display/D1 */
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 44px; /* 183.333% */
+        }
+        .subtitle {
+          @include text_body_b4;
+        }
+      }
+    }
+  }
+  .sectionBox {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: left;
+    width: 100vw;
+    padding-left: 14px;
+    padding-right: 14px;
+
+    .leftSection {
+      padding-top: 16px;
+      text-align: left;
+      height: fit-content;
+
+      .heading1 {
+        color: #18181b;
+        margin-bottom: 16px;
+
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 44px; /* 137.5% */
+      }
+      .info {
+        margin-bottom: 20px;
+        color: #767d90;
+        width: 9.7vw;
+        min-width: 700px;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; /* 187.5% */
+      }
+      .section {
+        width: 14vw;
+        min-width: 203px;
+        display: flex;
+        gap: 8px;
+        // justify-content: space-between;
+
+        .view {
+          color: #3874f4;
+
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 30px; /* 187.5% */
+        }
+      }
+    }
+    .rightSection {
+      padding-top: 24px;
+      padding-left: 24px;
+      padding-right: 24px;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+}

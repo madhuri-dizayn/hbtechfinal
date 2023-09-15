@@ -1,0 +1,227 @@
+.CardInfoBlog {
+  width: 100%;
+  text-align: left;
+  padding-left: 7.7vw;
+  flex: 1 0 0;
+  padding-top: 180px;
+
+  .heading {
+    color: #18181b;
+    /* Heading/H3 */
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px; /* 137.5% */
+  }
+}
+.CardContainer {
+  width: 100vw;
+  height: fit-content;
+  //   flex-direction: column;
+  padding-bottom: 200px;
+  flex-flow: row wrap;
+  padding-left: 7.7vw;
+  padding-right: 7.7vw;
+  display: flex;
+  justify-content: space-between;
+  .card {
+    margin-bottom: 30px;
+    display: flex;
+    width: 392px;
+    height: 488px;
+    padding: 16px;
+    flex-direction: column;
+    text-align: left;
+    gap: 16px;
+    border-radius: 12px;
+    border: 1px solid #e3f0f5;
+    background: #fff;
+
+    .image {
+      // width: 360px;
+      // height: 240px;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+    .title {
+      color: #5e4ef2;
+
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px; /* 142.857% */
+    }
+    .des {
+      color: #18181b;
+
+      /* Body/B5 */
+
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 28px; /* 140% */
+    }
+    .cardSection {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .title1 {
+        color: #97989f;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 142.857% */
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .CardInfoBlog {
+    display: none;
+  }
+  .CardContainer {
+    width: 100vw;
+    height: fit-content;
+    margin-top: 200px;
+    //   flex-direction: column;
+    // padding-bottom: 72px;
+    // flex-flow: row wrap;
+    padding-left: 2.7vw;
+    padding-right: 2.7vw;
+    display: flex;
+    justify-content: space-between;
+    .card {
+      margin-bottom: 16px;
+      display: flex;
+      width: 336px;
+      height: 451px;
+      padding: 16px;
+      flex-direction: column;
+      text-align: left;
+      gap: 16px;
+      border-radius: 12px;
+      border: 1px solid #e3f0f5;
+      background: #fff;
+
+      .image {
+        // width: 360px;
+        // height: 240px;
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+        }
+      }
+      .title {
+        display: flex;
+        padding: 4px 10px;
+        text-align: left;
+        gap: 4px;
+        color: #5e4ef2;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 142.857% */
+      }
+      .des {
+        color: #18181b;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px; /* 140% */
+      }
+      .cardSection {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .title1 {
+          color: #767d90;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px; /* 142.857% */
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 705px) {
+  .CardInfoBlog {
+    display: none;
+  }
+  .CardContainer {
+    width: 100vw;
+    height: fit-content;
+    margin-top: 200px;
+    //   flex-direction: column;
+    // padding-bottom: 72px;
+    // flex-flow: row wrap;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // justify-content: space-between;
+    .card {
+      margin-bottom: 16px;
+      display: flex;
+      width: 342px;
+      height: 451px;
+      padding: 16px;
+      flex-direction: column;
+      text-align: left;
+      gap: 16px;
+      border-radius: 12px;
+      border: 1px solid #e3f0f5;
+      background: #fff;
+
+      .image {
+        // width: 360px;
+        // height: 240px;
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+        }
+      }
+      .title {
+        display: flex;
+        padding: 4px 10px;
+        text-align: left;
+        gap: 4px;
+        color: #5e4ef2;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 142.857% */
+      }
+      .des {
+        color: #18181b;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px; /* 140% */
+      }
+      .cardSection {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .title1 {
+          color: #767d90;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px; /* 142.857% */
+        }
+      }
+    }
+  }
+}
