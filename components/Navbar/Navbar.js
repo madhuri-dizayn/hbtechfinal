@@ -24,7 +24,7 @@ const Navbar = () => {
       </div>
 
       <div className={styles.sectionItem}>
-        <Link href="/#home" >
+        <Link href="/#home">
           <p>Home</p>
         </Link>
         <Link href="/#our-projects">

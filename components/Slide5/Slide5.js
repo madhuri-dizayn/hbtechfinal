@@ -67,7 +67,7 @@ const Slide5 = () => {
                           activeIndex == index
                             ? "rotate(90deg)"
                             : "rotate(0deg)",
-                        transition: "all .9s ease-out",
+                        transition: "all .3s ease-out",
                       }}
                     />
                   </div>

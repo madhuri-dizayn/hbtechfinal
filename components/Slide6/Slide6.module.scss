@@ -60,29 +60,103 @@
         padding-bottom: 32px;
       }
       .button {
-        cursor: pointer;
-        display: inline-flex;
+        // all: unset;
+        height: 44px;
+        //width: 14vw;
+        // max-width: 203px;
+        width: 203px;
+        //transition: all 0.6s ease-in-out;
+        display: flex;
         align-items: center;
-        gap: 8px;
-        padding: 7px 24px;
-        @include text_body_b2;
-        color: $blue-100;
-        .btnIcon {
-          display: flex;
-          align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        position: relative;
+        z-index: 1;
+        // cursor: pointer;
+        // border-radius: 38px;
+
+        // display: inline-flex;
+        // transition: all 0.6s ease-in-out;
+        // align-items: center;
+        // position: relative;
+        // overflow: hidden;
+        // z-index: 1;
+        // gap: 8px;
+        //
+        // @include text_body_b2;
+        // color: $blue-100;
+
+        .seccircle {
+          left: 0;
+          top: 0;
+          position: absolute;
+          height: 44px;
+          width: 44px;
+          border-radius: 38px;
+          background: #e3f0f5 !important;
+          transition: all 0.6s ease-in-out;
+          &:hover {
+            // all: unset;
+            //position: absolute;
+            height: 44px;
+            width: 203px;
+            transition: all 0.3s ease-in-out;
+            display: flex;
+            align-items: center;
+            scroll-behavior: smooth;
+            justify-content: center;
+            cursor: pointer;
+
+            // position: relative;
+          }
         }
       }
-    }
-    .image {
-      width: 40%;
-      img {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
+      .btnText {
+        position: relative;
+        z-index: 1;
+        width: fit-content;
+        font-size: 16px;
+        font-weight: 500;
+        // line-height: 30px;
+        letter-spacing: 0;
+        text-align: left;
+        color: #3874f4;
+
+        // &::after {
+        //   box-sizing: border-box;
+
+        //   padding: 0;
+        //   margin: 0;
+        //   scroll-behavior: smooth;
+        // }
+        // &::before {
+        //   box-sizing: border-box;
+        //   padding: 0;
+        //   margin: 0;
+        //   scroll-behavior: smooth;
+        // }
+      }
+      .btnIcon {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // padding-left: 11.25px;
       }
     }
   }
+  .image {
+    width: 40%;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
 }
+
 .sectionBox {
   display: flex;
 

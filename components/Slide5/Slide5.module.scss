@@ -33,12 +33,16 @@
         align-items: flex-start;
         gap: 21px;
         padding: 50px 30px 15px;
+
         margin-bottom: 40px;
         &.active {
           margin-bottom: 0px;
           border-radius: 16px;
           // opacity: 0.5;
           transition: all 0.3s ease-out;
+          scroll-behavior: smooth;
+          overflow: hidden;
+          // scale: 0.9s;
           background: linear-gradient(
             217deg,
             rgba(239, 251, 255, 0) 21.49%,
@@ -54,6 +58,7 @@
           border-radius: 5px;
           width: 56px;
           height: 56px;
+
           background: linear-gradient(
             180deg,
             rgba(100, 159, 239, 0.2) 0%,

@@ -60,6 +60,7 @@ const Slide6 = () => {
                 <p className={styles.subtitle}>{item.information1}</p>
 
                 <div className={styles.button}>
+                  <div className={styles.seccircle}></div>
                   <p className={styles.btnText}>{item.viewinfo}</p>
                   <div className={styles.btnIcon}>
                     <FrameIcon1 />
@@ -74,63 +75,6 @@ const Slide6 = () => {
           );
         })}
       </div>
-      {/* {data.map((item, index) => {
-        return (
-          <div key={index} className={styles.sectionBox}>
-            <div className={styles.leftSection}>
-              <p className={styles.heading1}>{item.information}</p>
-              <p className={styles.info}>{item.information1}</p>
-
-              <div className={styles.section}>
-                <p className={styles.view}>{item.viewinfo}</p>
-                <div>
-                  <FrameIcon1 />
-                </div>
-              </div>
-            </div>
-
-            <div className={styles.rightSection}>
-              <Image src={item.image} />
-            </div>
-          </div>
-        );
-      })} */}
-
-      {/* <div className={styles.sectionBox}>
-        <div className={styles.leftSection}>
-          <p className={styles.heading1}>{information}</p>
-          <p className={styles.info}>{information1}</p>
-
-          <div className={styles.section}>
-            <p className={styles.view}>{viewinfo}</p>
-            <div>
-              <FrameIcon1 />
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.rightSection}>
-          <Image src={imageslide} />
-        </div>
-      </div>
-
-      <div className={styles.sectionBox}>
-        <div className={styles.leftSection}>
-          <p className={styles.heading1}>{information}</p>
-          <p className={styles.info}>{information1}</p>
-
-          <div className={styles.section}>
-            <p className={styles.view}>{viewinfo}</p>
-            <div>
-              <FrameIcon1 />
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.rightSection}>
-          <Image src={imageslide3} />
-        </div>
-      </div> */}
 
       <div className={styles.slide2btn}>
         <button className={styles.btn}>View All</button>
